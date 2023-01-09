@@ -46,10 +46,19 @@ def merge_sort(list_to_sort):
 # Plotte List ohne Sortieren
 my_list = [54, 26, 93, 17, 77, 31, 44, 55, 20]
 x = range(len(my_list))
-plt.plot(x, my_list)
+plt.plot(x, my_list, "x")
+plt.grid()
+plt.xlabel("Position im Array")
+plt.ylabel("Wert")
+plt.title("Darstellung des Arrays my_list")
 plt.show()
 
-# Plotte Liste mit Sortieren
-merge_sort(my_list)
-plt.plot(x, my_list)
+mergeSort(my_list)
+
+x = range(len(my_list))
+plt.plot(x, my_list, "x")
+plt.grid()
+plt.xlabel("Position im Array")
+plt.ylabel("Wert")
+plt.title("Darstellung des Arrays my_list")
 plt.show()
